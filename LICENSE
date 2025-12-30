@@ -1,0 +1,125 @@
+Nota (práctica recomendada): para evitar ambigüedades legales, normalmente el archivo LICENSE se mantiene en el texto oficial. Lo de abajo es una traducción no oficial al español.
+
+Licencia de Hardware Abierto de CERN Versión 2 - Reciprocidad Débil
+(CERN-OHL-W)
+
+Preámbulo
+CERN, como licenciante de esta Licencia de Hardware Abierto de CERN
+Versión 2 ("esta Licencia" o "la Licencia"), pretende fomentar el uso,
+compartición, modificación y distribución de diseños de hardware y
+documentación relacionada. Esta Licencia está destinada a garantizar que
+los destinatarios obtengan el derecho a usar, estudiar, modificar y
+redistribuir el material licenciado, y a exigir que ciertas mejoras se
+pongan a disposición bajo los mismos términos.
+
+Esta es la variante de "Reciprocidad Débil" de la Licencia de Hardware
+Abierto de CERN v2, identificada como "CERN-OHL-W". Está diseñada para
+requerir que las modificaciones al propio material licenciado permanezcan
+disponibles bajo esta Licencia, permitiendo a la vez la combinación con
+otros materiales bajo términos diferentes, sujeto a las condiciones que
+se establecen a continuación.
+
+IMPORTANTE: Esta Licencia no es una garantía. Se proporciona "tal cual".
+
+1. Definiciones
+1.1 "Material Licenciado" significa la documentación, diseños, planos,
+    esquemas, datos de layout, archivos mecánicos, listas de materiales,
+    y cualquier otra información que se pone a disposición bajo esta
+    Licencia.
+1.2 "Documentación" significa cualquier texto, dibujos, diagramas, fotos,
+    archivos CAD y otro material explicativo incluido en el Material
+    Licenciado.
+1.3 "Producto" significa cualquier dispositivo, placa, conjunto u otro
+    elemento físico que se fabrica o ensambla en base al Material
+    Licenciado.
+1.4 "Fuente" significa la forma preferida del Material Licenciado para
+    realizar modificaciones, incluyendo archivos de diseño editables.
+1.5 "Usted" (o "Su") significa una persona o entidad legal que ejerce
+    derechos bajo esta Licencia.
+1.6 "Contribuyente" significa cualquier persona o entidad que modifica y/o
+    distribuye el Material Licenciado.
+1.7 "Modificar" significa alterar, adaptar, traducir o de otro modo cambiar
+    el Material Licenciado, incluyendo la creación de obras derivadas del
+    Material Licenciado.
+1.8 "Disponible" significa accesible en un sitio públicamente accesible,
+    repositorio u otro método de distribución, sin cargo más allá de costos
+    razonables de transferencia.
+
+2. Concesión de Derechos
+Sujeto a los términos y condiciones de esta Licencia, CERN le concede a
+Usted una licencia mundial, libre de regalías, no exclusiva y perpetua para:
+2.1 usar, reproducir y compartir el Material Licenciado;
+2.2 Modificar el Material Licenciado y crear obras derivadas; y
+2.3 fabricar, encargar la fabricación y distribuir Productos basados en el
+    Material Licenciado.
+
+3. Condiciones
+3.1 Atribución
+Debe conservar todos los avisos de copyright, licencia y exención de
+responsabilidad incluidos en el Material Licenciado. Si distribuye el
+Material Licenciado (modificado o no), debe incluir una copia de esta
+Licencia y preservar los avisos.
+3.2 Disponibilidad de la Fuente para Modificaciones
+Si distribuye Material Licenciado Modificado, debe poner a disposición la
+Fuente correspondiente bajo esta Licencia (CERN-OHL-W). La Fuente debe ser
+suficiente para permitir que un destinatario Modifique el Material Licenciado.
+3.3 Productos y Documentación
+Si distribuye un Producto, debe proporcionar al destinatario acceso al
+Material Licenciado (incluyendo cualquier modificación al Material Licenciado
+que Usted haya realizado y usado para producir ese Producto), bajo esta
+Licencia, de manera consistente con la Sección 3.2.
+3.4 Sin Restricciones Adicionales
+No puede imponer restricciones adicionales al ejercicio de los derechos
+concedidos por esta Licencia respecto del Material Licenciado. Esto no impide
+que licencie otros materiales separados bajo términos diferentes, siempre que
+el Material Licenciado permanezca bajo esta Licencia cuando se distribuya.
+3.5 Avisos de Modificación
+Debe documentar los cambios significativos que haya realizado al Material
+Licenciado e incluir un aviso indicando que modificó el Material Licenciado y
+la fecha de modificación.
+
+4. Licencia de Patentes
+Cada Contribuyente le concede a Usted una licencia mundial, libre de regalías,
+no exclusiva y perpetua para hacer, encargar hacer, usar, vender, ofrecer en
+venta, importar y de otro modo transferir Productos que, de lo contrario,
+infringirían reclamaciones de patentes propiedad o bajo control de ese
+Contribuyente, en la medida en que dichas reclamaciones se infrinjan
+necesariamente por el Material Licenciado del Contribuyente.
+
+5. Exención de Garantía
+EL MATERIAL LICENCIADO SE PROPORCIONA "TAL CUAL" Y SIN GARANTÍAS O
+CONDICIONES DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS, INCLUYENDO SIN LIMITACIÓN
+GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR, TÍTULO
+O NO INFRACCIÓN.
+
+6. Limitación de Responsabilidad
+EN NINGÚN CASO Y BAJO NINGUNA TEORÍA LEGAL, YA SEA EXTRACONTRACTUAL
+(INCLUYENDO NEGLIGENCIA), CONTRACTUAL O DE OTRO TIPO, A MENOS QUE LA LEY
+APLICABLE LO EXIJA, CERN O CUALQUIER CONTRIBUYENTE SERÁ RESPONSABLE ANTE USTED
+POR DAÑOS, INCLUYENDO CUALQUIER DAÑO DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL O
+CONSECUENTE DE CUALQUIER NATURALEZA QUE SURJA COMO RESULTADO DE ESTA LICENCIA O
+DEL USO O LA IMPOSIBILIDAD DE USAR EL MATERIAL LICENCIADO (INCLUYENDO, ENTRE
+OTROS, DAÑOS POR PÉRDIDA DE BUENA VOLUNTAD, PARO DE TRABAJO, FALLA O MAL
+FUNCIONAMIENTO DEL COMPUTADOR, O CUALQUIER OTRA PÉRIDA O DAÑO COMERCIAL),
+INCLUSO SI CERN O DICHO CONTRIBUYENTE HA SIDO ADVERTIDO DE LA POSIBILIDAD DE
+TALES DAÑOS.
+
+7. Terminación
+7.1 Esta Licencia y los derechos concedidos bajo ella terminarán
+automáticamente si Usted no cumple con sus términos.
+7.2 Si Usted cesa toda violación de esta Licencia, entonces Su licencia se
+restablece (a) provisionalmente, a menos y hasta que CERN o un Contribuyente la
+termine explícitamente, y (b) permanentemente, si CERN o un Contribuyente no la
+termina dentro de los 60 días posteriores al cese.
+7.3 Las Secciones 5 y 6 sobreviven a la terminación.
+
+8. General
+8.1 Esta Licencia no otorga permiso para usar marcas comerciales, logotipos o
+nombres de CERN o de cualquier Contribuyente, excepto en la medida necesaria
+para un uso razonable y habitual al describir el origen del Material Licenciado
+y reproducir el contenido de los avisos.
+8.2 Si alguna disposición de esta Licencia se considera inaplicable, dicha
+disposición será reformada solo en la medida necesaria para hacerla aplicable,
+y el resto permanecerá en vigor.
+
+FIN DE TÉRMINOS Y CONDICIONES

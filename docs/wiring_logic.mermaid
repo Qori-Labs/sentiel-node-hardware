@@ -1,0 +1,13 @@
+flowchart LR
+  SP[Panel Solar<br/>(Objetivo de diseño: ≥5W, típico 6W)] --> FUSE[Fusible en Serie<br/>(1–2A, según diseño)]
+  FUSE --> PVNODE((Nodo de Entrada PV))
+  PVNODE --> CC[Módulo de Carga / Alimentación<br/>(química compatible)]
+  PVNODE --- TVS[Diodo TVS (Shunt)<br/>(clamp de surges/ESD a GND)]
+  TVS --- GND((GND))
+
+  CC -->|BAT+ / BAT-| BATT[Pack de Batería<br/>(1S, 2×18650)]
+  BATT --> PWR[Rieles de Energía<br/>(3.3V / 5V según requiera)]
+
+  PWR --> MCU[MCU<br/>(nRF52840)]
+  MCU --> RF[Radio LoRa<br/>(clase SX126x)]
+  RF --> ANT[Antena<br/>(clase 433/868/915, depende de región)]
