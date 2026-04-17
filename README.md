@@ -1,8 +1,8 @@
 <div align="center">
-  <!-- Opcional: añadir logo en docs/assets/qori-labs-mark.svg -->
+  <!-- Optional: add logo at docs/assets/qori-labs-mark.svg -->
   <!-- <img alt="Qori Labs" src="docs/assets/qori-labs-mark.svg" height="64" /> -->
   <h1>sentinel-node-hardware</h1>
-  <p><strong>Diseño de hardware de referencia para nodos relay LoRa autónomos store-and-forward</strong></p>
+  <p><strong>Reference hardware design for autonomous LoRa store-and-forward relay nodes</strong></p>
 
   ![Status: Prototype](https://img.shields.io/badge/Status-Prototype-orange)
   ![License: CERN-OHL-W](https://img.shields.io/badge/License-CERN--OHL--W-blue)
@@ -11,88 +11,88 @@
 
 ---
 
-## Descripción general
+## Overview
 
-Este repositorio define la **capa física** para nodos relay Qori Sentinel: camino de energía, guía de enclosure, lógica de cableado y un scaffold de bring-up para entornos de alta altitud off-grid.
+This repository defines the **physical layer** for Qori Sentinel relay nodes: power path, enclosure guidance, wiring logic, and a bring-up scaffold for high-altitude off-grid environments.
 
-**Objetivos de diseño (validación pendiente):**
-- Objetivo de operación en frío: **-10°C a +25°C** *(objetivo de diseño; validación pendiente — ver docs/test_plan.md)*
-- Tolerancia a alta exposición UV *(elección de materiales + mantenimiento; validación pendiente)*
-- Operación solar off-grid con **panel ≥5W** *(objetivo de diseño; depende de sitio/estación; validación pendiente)*
-- Operación store-and-forward con paquetes LoRa cortos *(el comportamiento a nivel sistema depende del firmware; validación pendiente)*
+**Design goals (validation pending):**
+- Cold-weather operating target: **-10°C to +25°C** *(design target; validation pending — see docs/test_plan.md)*
+- Tolerance for high UV exposure *(materials selection + maintenance; validation pending)*
+- Off-grid solar operation with **panel ≥5W** *(design target; site/season dependent; validation pending)*
+- Store-and-forward operation with short LoRa packets *(system-level behavior depends on firmware; validation pending)*
 
-Este repositorio es una **referencia de ingeniería**. No es un diseño de producto certificado.
-
----
-
-## Intención del sistema (qué es / qué no es este nodo)
-
-### Intended (intencionado)
-- Nodo relay alimentado por solar para experimentos store-and-forward con **paquetes LoRa cortos**.
-- Decisiones de diseño conservadoras y testeables para validación piloto.
-- Mantenibilidad en campo (enclosure servible, modos de falla documentados).
-
-### Not intended (no intencionado)
-- No es un dispositivo de “seguridad de vida” ni un sustituto de protocolos de rescate establecidos.
-- No garantiza cobertura, entrega, uptime ni tiempo de respuesta.
+This repository is an **engineering reference**. It is not a certified product design.
 
 ---
 
-## Configuración de radio (dependiente de región)
+## System intent (what this node is / is not)
 
-Este diseño es **dependiente de la región** y debe configurarse según restricciones regulatorias locales y aprobación del sitio (p. ej., plan de frecuencias, potencia de salida, duty cycle).
+### Intended
+- Solar-powered relay node for store-and-forward experiments with **short LoRa packets**.
+- Conservative, testable design decisions for pilot validation.
+- Field maintainability (serviceable enclosure, documented failure modes).
 
-- Soportado conceptualmente: hardware LoRa clase **433 / 868 / 915 MHz** (dependiente de región).
-- **Configuración de referencia actual:** componentes y antena clase **915 MHz** en BOM (ajustar por región).
-
-No interpretes ninguna configuración de referencia como permiso para operar. Confirma cumplimiento y obtén aprobación del sitio.
-
----
-
-## Sin falsa seguridad (descargo por prototipo)
-
-**PROTOTIPO DE INVESTIGACIÓN / REFERENCIA DE INGENIERÍA — NO ES UN DISPOSITIVO CERTIFICADO DE SEGURIDAD DE VIDA.**  
-No confíes en este hardware para decisiones de seguridad personal. Sigue siempre protocolos locales y autoridades entrenadas.
-
-Este repo documenta intencionalmente límites y modos de falla. La validación está pendiente y debe demostrarse con artefactos de prueba (ver docs/test_plan.md).
+### Not intended
+- Not a life-safety device and not a substitute for established rescue protocols.
+- Does not guarantee coverage, delivery, uptime, or response time.
 
 ---
 
-## Qué hay en este repo
+## Radio configuration (region-dependent)
 
-- **BOM.md** — Lista de materiales con partes preferidas y alternos seguros
-- **docs/wiring_logic.mermaid** — diagrama de lógica de cableado (referencia)
-- **docs/power_path.md** — arquitectura canónica v1 de energía + advertencias de química
-- **docs/test_plan.md** — pruebas conservadoras de bring-up + ambiente + sanidad RF
-- **docs/failure_modes.md** — principales modos de falla en altura + mitigaciones/observabilidad
-- **mechanical/README.md** — guía de enclosure/impresión + servicio en campo
-- **firmware/** — scaffold mínimo PlatformIO para bring-up (no firmware de producción)
+This design is **region-dependent** and must be configured according to local regulatory constraints and site approval requirements (for example, frequency plan, output power, and duty cycle).
+
+- Conceptually supported: LoRa hardware in the **433 / 868 / 915 MHz** classes (region-dependent).
+- **Current reference configuration:** **915 MHz-class** components and antenna in the BOM (adjust for region).
+
+Do not interpret any reference configuration as permission to operate. Confirm compliance and obtain site approval.
 
 ---
 
-## Bring-up quick start (mínimo)
+## No false assurance (prototype disclaimer)
 
-1. Leer:
+**RESEARCH PROTOTYPE / ENGINEERING REFERENCE — NOT A CERTIFIED LIFE-SAFETY DEVICE.**  
+Do not rely on this hardware for personal safety decisions. Always follow local protocols and trained authorities.
+
+This repository intentionally documents limits and failure modes. Validation is pending and must be demonstrated with test artifacts (see docs/test_plan.md).
+
+---
+
+## What’s in this repo
+
+- **BOM.md** — Bill of materials with preferred parts and safe alternates
+- **docs/wiring_logic.mermaid** — wiring logic diagram (reference)
+- **docs/power_path.md** — canonical v1 power architecture + chemistry warnings
+- **docs/test_plan.md** — conservative bring-up + environmental + RF sanity tests
+- **docs/failure_modes.md** — main high-altitude failure modes + mitigations/observability
+- **mechanical/README.md** — enclosure/printing guidance + field service notes
+- **firmware/** — minimal PlatformIO scaffold for bring-up (not production firmware)
+
+---
+
+## Bring-up quick start (minimum)
+
+1. Read:
    - docs/power_path.md
    - docs/test_plan.md
-2. Ensamblar de forma conservadora (etiquetar química, fusible en entrada PV).
-3. Flashear el scaffold de firmware y confirmar:
-   - serial vivo
-   - latido LED
-4. Ejecutar pruebas de banco antes de cualquier exposición en campo.
+2. Assemble conservatively (label chemistry, add fuse on PV input).
+3. Flash the firmware scaffold and confirm:
+   - serial output is alive
+   - LED heartbeat
+4. Run bench tests before any field exposure.
 
 ---
 
-## Licenciamiento
+## Licensing
 
-La documentación de hardware y archivos de diseño asociados en este repositorio están licenciados bajo **CERN-OHL-W**.  
-Ver **/LICENSE** para el texto completo.
+The hardware documentation and associated design files in this repository are licensed under **CERN-OHL-W**.  
+See **/LICENSE** for the full text.
 
 ---
 
-## Notas de seguridad (no exhaustivas)
+## Safety notes (non-exhaustive)
 
-- Las celdas de litio pueden ser peligrosas. Usa celdas protegidas, química/perfil de cargador correctos y considera fusibles.
-- Los enclosures impermeables pueden atrapar humedad; la condensación es un modo de falla común en altura.
-- **Nunca transmitas RF sin una antena conectada.**
-# sentiel-node-hardware
+- Lithium cells can be hazardous. Use protected cells, the correct chemistry/charger profile, and consider fusing.
+- Waterproof enclosures can trap moisture; condensation is a common failure mode at altitude.
+- **Never transmit RF without an antenna connected.**
+# sentinel-node-hardware
